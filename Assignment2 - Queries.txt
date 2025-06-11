@@ -1,0 +1,9 @@
+SELECT * FROM Driver
+
+SELECT * FROM Manufacturer
+
+SELECT MO.Model_ID, MO.Model_No, MO.Model_Name, MO.Description, MA.Manufacturer_Name
+FROM Truck_Model MO JOIN Manufacturer MA ON MO.Manufacturer_ID = MA.Manufacturer_ID
+
+SELECT I.Inventory_ID, I.Date_Purchased, I.Date_Entered_Into_Service, I.Vin_No, I.Initial_Mileage, I.Current_Mileage, I.In_Repair, MO.Model_Name, MA.Manufacturer_Name
+FROM Truck_Inventory I JOIN Truck_Model MO JOIN Manufacturer MA ON MA.Manufacturer_ID = MO.Manufacturer_ID ON MO.Model_ID = I.Model_ID

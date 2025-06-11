@@ -1,0 +1,27 @@
+INSERT INTO Manufacturer(Manufacturer_Name, Street_Address, City, State, Zip_Code) VALUES ('Kenworth', '2125 S Constitution Blvd', 'West Vally City', 'UT', 84119);
+INSERT INTO Manufacturer(Manufacturer_Name, Street_Address, City, State, Zip_Code) VALUES ('Volvo', '4881 Cougar Trail Road', 'Dublin', 'VA', 24084);
+
+INSERT INTO Truck_Model(Model_No, Model_Name, Description, Manufacturer_ID) VALUES ('FH16', 'Long-Haul', 'Large-Scale Transportation', 1);
+INSERT INTO Truck_Model(Model_No, Model_Name, Description, Manufacturer_ID) VALUES ('FMX', 'Construction', 'Construction Transportation', 1);
+INSERT INTO Truck_Model(Model_No, Model_Name, Description, Manufacturer_ID) VALUES ('VNL', 'Liquid', 'Liquid Transportation', 1);
+INSERT INTO Truck_Model(Model_No, Model_Name, Description, Manufacturer_ID) VALUES ('T680', 'Advantage', 'Large-Scale Transportation', 2);
+INSERT INTO Truck_Model(Model_No, Model_Name, Description, Manufacturer_ID) VALUES ('K370', 'Cabover', 'Medium-Scale Transportation', 2);
+
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (500, 'TX00000001', to_date('12/01/2016', 'mm/dd/yyyy'), to_date('01/01/2017', 'mm/dd/yyyy'), NULL, 25400, 1);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (520, 'TX00000012', to_date('12/01/2016', 'mm/dd/yyyy'), to_date('06/01/2017', 'mm/dd/yyyy'), NULL, 21000, 1);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (640, 'TX00000023', to_date('12/12/2016', 'mm/dd/yyyy'), to_date('07/05/2017', 'mm/dd/yyyy'), NULL, 18000, 2);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (300, 'TX00000034', to_date('08/05/2016', 'mm/dd/yyyy'), to_date('11/10/2016', 'mm/dd/yyyy'), NULL, 50100, 2);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (750, 'TX00000036', to_date('01/01/2016', 'mm/dd/yyyy'), to_date('06/02/2016', 'mm/dd/yyyy'), NULL, 48020, 3);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (102, 'TX00000044', to_date('08/02/2018', 'mm/dd/yyyy'), to_date('10/01/2018', 'mm/dd/yyyy'), NULL, 7500, 4);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (203, 'TX00000046', to_date('03/21/2018', 'mm/dd/yyyy'), to_date('04/01/2018', 'mm/dd/yyyy'), NULL, 15860, 4);
+INSERT INTO Truck_Inventory(Initial_Mileage, Vin_No, Date_Purchased, Date_Entered_Into_Service, In_Repair, Current_Mileage, Model_ID) VALUES (178, 'TX00000052', to_date('05/21/2018', 'mm/dd/yyyy'), to_date('07/01/2018', 'mm/dd/yyyy'), to_date('01/26/2021', 'mm/dd/yyyy'), 18719, 5);
+
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Greco', 'Jim');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Hollander', 'Tom');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('French', 'Austin');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Angelino', 'Gary');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Hasting', 'Mike');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Hunn', 'Adam');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Montagna', 'Steve');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Fisher', 'Brad');
+INSERT INTO Driver(Last_Name, First_Name) VALUES ('Johnson', 'Jimmy');
